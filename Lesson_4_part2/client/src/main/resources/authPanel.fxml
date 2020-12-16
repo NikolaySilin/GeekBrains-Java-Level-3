@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="329.0" prefWidth="496.0" xmlns:fx="http://javafx.com/fxml" fx:controller="client.Controller" >
+   <children>
+      <Pane fx:id="authPaneli" prefHeight="341.0" prefWidth="496.0">
+         <children>
+            <TextField fx:id="loginField" layoutX="142.0" layoutY="98.0" prefHeight="25.0" prefWidth="213.0" promptText="Введите логин..." />
+            <PasswordField fx:id="passwordField" layoutX="142.0" layoutY="140.0" onAction="#tryToAuth" prefHeight="25.0" prefWidth="213.0" promptText="Введите пароль..." />
+            <Button layoutX="227.0" layoutY="180.0" mnemonicParsing="false" onAction="#tryToAuth" text="Вход" />
+            <Button layoutX="206.0" layoutY="230.0" mnemonicParsing="false" onAction="#showRegWindow" text="Регистрация" />
+            <Label layoutX="96.0" layoutY="102.0" text="Логин:" />
+            <Label layoutX="88.0" layoutY="144.0" text="Пароль:" />
+            <TextArea fx:id="textArea" layoutX="74.0" layoutY="270.0" prefHeight="45.0" prefWidth="348.0" />
+            <Label layoutX="30.0" layoutY="270.0" text="Логгер:" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
